@@ -1,3 +1,5 @@
+package edu.ucalgary.oop;
+
 public class Pet {
     //Object Variables
     private final String NAME;
@@ -49,7 +51,9 @@ public class Pet {
         return this.vaccineStatus;
     }
     public String getCareSummary(){
-        return care.summarizeCareInstructions();
+        String summary = "Care for " + getName() + ":\n";
+        summary += care.summarizeCareInstructions();
+        return summary;
     }
     public Client getOwner(){
         return this.owner;

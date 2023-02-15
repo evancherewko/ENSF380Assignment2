@@ -1,3 +1,5 @@
+package edu.ucalgary.oop;
+
 public class RewardsProfile {
     //Object Variables
     private String rewardsNum = "Not enrolled";
@@ -10,7 +12,7 @@ public class RewardsProfile {
     public RewardsProfile(String newNumber) throws InvalidRewardsNumException{
         for(int i = 0; i < newNumber.length(); i++){
             if (!Character.isDigit(newNumber.charAt(i))) {
-                throw new InvalidRewardsNumException("Invalid Input ---------- CHANGE?");
+                throw new InvalidRewardsNumException(); // REmove message?
             }
         }
     this.rewardsNum = newNumber;

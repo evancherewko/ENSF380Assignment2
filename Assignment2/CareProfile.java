@@ -1,3 +1,5 @@
+package edu.ucalgary.oop;
+
 public class CareProfile {
     //Object Variables
     private String[] medList;
@@ -14,7 +16,6 @@ public class CareProfile {
     //Helper Functions
     public String summarizeCareInstructions(){
         String summary = "";
-        summary += "Care for " + "PLACEHOLDER" + ":\n"; // GET PLACEHOLDER????????????????????????
         for(int i = 0; i < medList.length; i++){
             summary += medList[i];
             summary += ", ";

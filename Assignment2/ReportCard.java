@@ -1,3 +1,6 @@
+package edu.ucalgary.oop;
+
+
 public class ReportCard {
     //Object Variables
     private final Booking REPORT;

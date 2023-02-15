@@ -1,3 +1,5 @@
+package edu.ucalgary.oop;
+
 public class Client {
     //Object Variables
     private String name;
@@ -14,7 +16,7 @@ public class Client {
     }
 
     //Helper Functions
-    public boolean enrollRewards(String newNumber){ //---------------------------------------------THIS ONE
+    public boolean enrollRewards(String newNumber){
         try{
             rewardsInfo = new RewardsProfile(newNumber);
         }catch(Exception e){

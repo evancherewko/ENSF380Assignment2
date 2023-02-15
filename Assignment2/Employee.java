@@ -1,4 +1,4 @@
-import java.net.IDN;
+package edu.ucalgary.oop;
 
 public class Employee {
     //Object Variables
@@ -9,8 +9,10 @@ public class Employee {
 
     //Constructor
     public Employee(String name, String idNumber){
+        this.supervisedEmployees = new Employee[10];
         this.name = name;
         this.IDNUMBER = idNumber;
+        this.managerID = null;
     }
     public Employee(String name, String idNumber, String managerID){
         this.name = name;

@@ -1,3 +1,5 @@
+package edu.ucalgary.oop;
+
 public class EmergVet {
     //Object Variables
     private String name;
